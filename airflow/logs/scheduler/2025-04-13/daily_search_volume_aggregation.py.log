@@ -3261,3 +3261,164 @@ airflow.exceptions.AirflowException: Invalid arguments were passed to SparkSubmi
 [2025-04-13T21:42:52.703+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:42:52.702+0000] {dag.py:2915} INFO - Sync 1 DAGs
 [2025-04-13T21:42:52.738+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:42:52.737+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
 [2025-04-13T21:42:52.762+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.163 seconds
+[2025-04-13T21:43:22.941+0000] {processor.py:157} INFO - Started process (PID=1781) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:43:22.943+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:43:22.947+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:43:22.946+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:43:22.971+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:43:23.003+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:43:23.002+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:43:23.025+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:43:23.025+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:43:23.042+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.105 seconds
+[2025-04-13T21:43:53.352+0000] {processor.py:157} INFO - Started process (PID=1793) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:43:53.353+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:43:53.357+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:43:53.357+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:43:53.378+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:43:53.409+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:43:53.409+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:43:53.430+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:43:53.430+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:43:53.445+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.097 seconds
+[2025-04-13T21:44:23.843+0000] {processor.py:157} INFO - Started process (PID=1805) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:44:23.845+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:44:23.849+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:44:23.848+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:44:23.884+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:44:23.934+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:44:23.933+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:44:23.969+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:44:23.968+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:44:23.987+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.149 seconds
+[2025-04-13T21:44:54.208+0000] {processor.py:157} INFO - Started process (PID=1817) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:44:54.209+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:44:54.213+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:44:54.213+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:44:54.234+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:44:54.269+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:44:54.268+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:44:54.291+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:44:54.291+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:44:54.306+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.104 seconds
+[2025-04-13T21:45:24.566+0000] {processor.py:157} INFO - Started process (PID=1829) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:45:24.568+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:45:24.575+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:45:24.575+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:45:24.612+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:45:24.673+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:45:24.672+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:45:24.704+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:45:24.704+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:45:24.727+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.170 seconds
+[2025-04-13T21:45:55.040+0000] {processor.py:157} INFO - Started process (PID=1841) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:45:55.042+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:45:55.051+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:45:55.050+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:45:55.101+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:45:55.165+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:45:55.164+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:45:55.200+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:45:55.200+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:45:55.221+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.190 seconds
+[2025-04-13T21:46:25.491+0000] {processor.py:157} INFO - Started process (PID=1853) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:46:25.492+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:46:25.502+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:46:25.501+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:46:25.548+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:46:25.607+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:46:25.606+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:46:25.639+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:46:25.639+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:46:25.658+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.181 seconds
+[2025-04-13T21:46:55.958+0000] {processor.py:157} INFO - Started process (PID=1865) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:46:55.959+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:46:55.962+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:46:55.962+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:46:55.984+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:46:56.015+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:46:56.014+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:46:56.036+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:46:56.035+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:46:56.052+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.100 seconds
+[2025-04-13T21:47:26.435+0000] {processor.py:157} INFO - Started process (PID=1877) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:47:26.436+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:47:26.442+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:47:26.441+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:47:26.489+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:47:26.544+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:47:26.543+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:47:26.583+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:47:26.582+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:47:26.605+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.181 seconds
+[2025-04-13T21:47:56.766+0000] {processor.py:157} INFO - Started process (PID=1889) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:47:56.767+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:47:56.770+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:47:56.770+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:47:56.789+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:47:56.819+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:47:56.818+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:47:56.838+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:47:56.838+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:47:56.852+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.091 seconds
+[2025-04-13T21:48:27.144+0000] {processor.py:157} INFO - Started process (PID=1901) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:48:27.145+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:48:27.149+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:48:27.148+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:48:27.170+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:48:27.201+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:48:27.200+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:48:27.221+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:48:27.221+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:48:27.236+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.097 seconds
+[2025-04-13T21:48:57.612+0000] {processor.py:157} INFO - Started process (PID=1913) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:48:57.614+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:48:57.619+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:48:57.618+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:48:57.647+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:48:57.688+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:48:57.687+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:48:57.717+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:48:57.717+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:48:57.735+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.130 seconds
+[2025-04-13T21:49:27.999+0000] {processor.py:157} INFO - Started process (PID=1925) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:49:28.000+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:49:28.002+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:49:28.002+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:49:28.022+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:49:28.054+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:49:28.054+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:49:28.077+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:49:28.076+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:49:28.094+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.101 seconds
+[2025-04-13T21:49:58.364+0000] {processor.py:157} INFO - Started process (PID=1937) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:49:58.365+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:49:58.370+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:49:58.370+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:49:58.407+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:49:58.468+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:49:58.467+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:49:58.499+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:49:58.499+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:49:58.520+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.165 seconds
+[2025-04-13T21:50:28.679+0000] {processor.py:157} INFO - Started process (PID=1949) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:50:28.680+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:50:28.683+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:50:28.682+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:50:28.704+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:50:28.740+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:50:28.739+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:50:28.762+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:50:28.762+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:50:28.779+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.110 seconds
+[2025-04-13T21:50:59.028+0000] {processor.py:157} INFO - Started process (PID=1961) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:50:59.029+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:50:59.036+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:50:59.034+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:50:59.075+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:50:59.159+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:50:59.158+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:50:59.196+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:50:59.195+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:50:59.226+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.203 seconds
+[2025-04-13T21:51:29.430+0000] {processor.py:157} INFO - Started process (PID=1973) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:51:29.432+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:51:29.439+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:51:29.438+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:51:29.487+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:51:29.550+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:51:29.549+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:51:29.591+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:51:29.590+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:51:29.608+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.186 seconds
+[2025-04-13T21:51:59.903+0000] {processor.py:157} INFO - Started process (PID=1985) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:51:59.904+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:51:59.908+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:51:59.907+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:51:59.927+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:51:59.959+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:51:59.958+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:51:59.985+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:51:59.985+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:52:00.000+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.101 seconds
+[2025-04-13T21:52:30.212+0000] {processor.py:157} INFO - Started process (PID=1997) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:52:30.214+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:52:30.217+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:52:30.217+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:52:30.240+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:52:30.285+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:52:30.284+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:52:30.307+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:52:30.307+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:52:30.323+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.117 seconds
+[2025-04-13T21:53:00.695+0000] {processor.py:157} INFO - Started process (PID=2009) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:53:00.696+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:53:00.699+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:53:00.699+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:53:00.719+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:53:00.752+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:53:00.751+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:53:00.771+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:53:00.771+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:53:00.785+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.094 seconds
+[2025-04-13T21:53:31.122+0000] {processor.py:157} INFO - Started process (PID=2021) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:53:31.124+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:53:31.131+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:53:31.130+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:53:31.162+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:53:31.230+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:53:31.229+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:53:31.264+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:53:31.264+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:53:31.285+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.169 seconds
+[2025-04-13T21:54:01.517+0000] {processor.py:157} INFO - Started process (PID=2033) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:54:01.518+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:54:01.524+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:54:01.523+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:54:01.548+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:54:01.583+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:54:01.582+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:54:01.605+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:54:01.604+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:54:01.620+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.110 seconds
+[2025-04-13T21:54:32.115+0000] {processor.py:157} INFO - Started process (PID=2045) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:54:32.117+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:54:32.123+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:54:32.123+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:54:32.160+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:54:32.217+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:54:32.216+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:54:32.251+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:54:32.251+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:54:32.281+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.171 seconds
