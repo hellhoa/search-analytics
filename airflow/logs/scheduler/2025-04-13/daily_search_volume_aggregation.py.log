@@ -3254,3 +3254,10 @@ airflow.exceptions.AirflowException: Invalid arguments were passed to SparkSubmi
 [2025-04-13T21:42:22.106+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:42:22.105+0000] {dag.py:2915} INFO - Sync 1 DAGs
 [2025-04-13T21:42:22.126+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:42:22.126+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
 [2025-04-13T21:42:22.141+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.099 seconds
+[2025-04-13T21:42:52.605+0000] {processor.py:157} INFO - Started process (PID=1769) to work on /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:42:52.607+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/daily_search_volume_aggregation.py for tasks to queue
+[2025-04-13T21:42:52.613+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:42:52.612+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:42:52.647+0000] {processor.py:839} INFO - DAG(s) dict_keys(['daily_search_volume_aggregation']) retrieved from /opt/airflow/dags/daily_search_volume_aggregation.py
+[2025-04-13T21:42:52.703+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:42:52.702+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-13T21:42:52.738+0000] {logging_mixin.py:151} INFO - [2025-04-13T21:42:52.737+0000] {dag.py:3696} INFO - Setting next_dagrun for daily_search_volume_aggregation to 2025-04-13T21:01:00+00:00, run_after=2025-04-13T22:01:00+00:00
+[2025-04-13T21:42:52.762+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/daily_search_volume_aggregation.py took 0.163 seconds
