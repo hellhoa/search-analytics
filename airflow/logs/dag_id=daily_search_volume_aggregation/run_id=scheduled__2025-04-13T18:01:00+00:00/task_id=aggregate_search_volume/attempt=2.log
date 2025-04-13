@@ -1,0 +1,82 @@
+[2025-04-13T19:07:04.228+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_search_volume_aggregation.aggregate_search_volume scheduled__2025-04-13T18:01:00+00:00 [queued]>
+[2025-04-13T19:07:04.235+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_search_volume_aggregation.aggregate_search_volume scheduled__2025-04-13T18:01:00+00:00 [queued]>
+[2025-04-13T19:07:04.235+0000] {taskinstance.py:1359} INFO - Starting attempt 2 of 3
+[2025-04-13T19:07:04.247+0000] {taskinstance.py:1380} INFO - Executing <Task(SparkSubmitOperator): aggregate_search_volume> on 2025-04-13 18:01:00+00:00
+[2025-04-13T19:07:04.250+0000] {standard_task_runner.py:57} INFO - Started process 294 to run task
+[2025-04-13T19:07:04.253+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'daily_search_volume_aggregation', 'aggregate_search_volume', 'scheduled__2025-04-13T18:01:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/daily_search_volume_aggregation.py', '--cfg-path', '/tmp/tmputs943ql']
+[2025-04-13T19:07:04.255+0000] {standard_task_runner.py:85} INFO - Job 3: Subtask aggregate_search_volume
+[2025-04-13T19:07:04.323+0000] {task_command.py:415} INFO - Running <TaskInstance: daily_search_volume_aggregation.aggregate_search_volume scheduled__2025-04-13T18:01:00+00:00 [running]> on host 9671fbf3bbf1
+[2025-04-13T19:07:04.407+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='daily_search_volume_aggregation' AIRFLOW_CTX_TASK_ID='aggregate_search_volume' AIRFLOW_CTX_EXECUTION_DATE='2025-04-13T18:01:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-13T18:01:00+00:00'
+[2025-04-13T19:07:04.411+0000] {base.py:73} INFO - Using connection ID 'spark_default' for task execution.
+[2025-04-13T19:07:04.412+0000] {spark_submit.py:340} INFO - Spark-Submit cmd: spark-submit --master spark:7077 --conf spark.driver.memory=1g --conf spark.executor.memory=1g --conf spark.master=local[*] --name arrow-spark --verbose /opt/airflow/dags/spark/daily_aggregation.py
+[2025-04-13T19:07:07.641+0000] {spark_submit.py:491} INFO - Using properties file: null
+[2025-04-13T19:07:07.788+0000] {spark_submit.py:491} INFO - Parsed arguments:
+[2025-04-13T19:07:07.789+0000] {spark_submit.py:491} INFO - master                  spark:7077
+[2025-04-13T19:07:07.789+0000] {spark_submit.py:491} INFO - remote                  null
+[2025-04-13T19:07:07.789+0000] {spark_submit.py:491} INFO - deployMode              null
+[2025-04-13T19:07:07.789+0000] {spark_submit.py:491} INFO - executorMemory          1g
+[2025-04-13T19:07:07.789+0000] {spark_submit.py:491} INFO - executorCores           null
+[2025-04-13T19:07:07.790+0000] {spark_submit.py:491} INFO - totalExecutorCores      null
+[2025-04-13T19:07:07.790+0000] {spark_submit.py:491} INFO - propertiesFile          null
+[2025-04-13T19:07:07.790+0000] {spark_submit.py:491} INFO - driverMemory            1g
+[2025-04-13T19:07:07.790+0000] {spark_submit.py:491} INFO - driverCores             null
+[2025-04-13T19:07:07.790+0000] {spark_submit.py:491} INFO - driverExtraClassPath    null
+[2025-04-13T19:07:07.790+0000] {spark_submit.py:491} INFO - driverExtraLibraryPath  null
+[2025-04-13T19:07:07.791+0000] {spark_submit.py:491} INFO - driverExtraJavaOptions  null
+[2025-04-13T19:07:07.791+0000] {spark_submit.py:491} INFO - supervise               false
+[2025-04-13T19:07:07.791+0000] {spark_submit.py:491} INFO - queue                   null
+[2025-04-13T19:07:07.791+0000] {spark_submit.py:491} INFO - numExecutors            null
+[2025-04-13T19:07:07.791+0000] {spark_submit.py:491} INFO - files                   null
+[2025-04-13T19:07:07.791+0000] {spark_submit.py:491} INFO - pyFiles                 null
+[2025-04-13T19:07:07.792+0000] {spark_submit.py:491} INFO - archives                null
+[2025-04-13T19:07:07.792+0000] {spark_submit.py:491} INFO - mainClass               null
+[2025-04-13T19:07:07.792+0000] {spark_submit.py:491} INFO - primaryResource         file:/opt/airflow/dags/spark/daily_aggregation.py
+[2025-04-13T19:07:07.792+0000] {spark_submit.py:491} INFO - name                    arrow-spark
+[2025-04-13T19:07:07.792+0000] {spark_submit.py:491} INFO - childArgs               []
+[2025-04-13T19:07:07.792+0000] {spark_submit.py:491} INFO - jars                    null
+[2025-04-13T19:07:07.792+0000] {spark_submit.py:491} INFO - packages                null
+[2025-04-13T19:07:07.793+0000] {spark_submit.py:491} INFO - packagesExclusions      null
+[2025-04-13T19:07:07.793+0000] {spark_submit.py:491} INFO - repositories            null
+[2025-04-13T19:07:07.793+0000] {spark_submit.py:491} INFO - verbose                 true
+[2025-04-13T19:07:07.793+0000] {spark_submit.py:491} INFO - 
+[2025-04-13T19:07:07.793+0000] {spark_submit.py:491} INFO - Spark properties used, including those specified through
+[2025-04-13T19:07:07.793+0000] {spark_submit.py:491} INFO - --conf and those from the properties file null:
+[2025-04-13T19:07:07.794+0000] {spark_submit.py:491} INFO - (spark.driver.memory,1g)
+[2025-04-13T19:07:07.794+0000] {spark_submit.py:491} INFO - (spark.executor.memory,1g)
+[2025-04-13T19:07:07.794+0000] {spark_submit.py:491} INFO - (spark.master,local[*])
+[2025-04-13T19:07:07.794+0000] {spark_submit.py:491} INFO - 
+[2025-04-13T19:07:07.794+0000] {spark_submit.py:491} INFO - 
+[2025-04-13T19:07:08.255+0000] {spark_submit.py:491} INFO - Main class:
+[2025-04-13T19:07:08.256+0000] {spark_submit.py:491} INFO - org.apache.spark.deploy.PythonRunner
+[2025-04-13T19:07:08.257+0000] {spark_submit.py:491} INFO - Arguments:
+[2025-04-13T19:07:08.257+0000] {spark_submit.py:491} INFO - file:/opt/airflow/dags/spark/daily_aggregation.py
+[2025-04-13T19:07:08.257+0000] {spark_submit.py:491} INFO - null
+[2025-04-13T19:07:08.263+0000] {spark_submit.py:491} INFO - Spark config:
+[2025-04-13T19:07:08.263+0000] {spark_submit.py:491} INFO - (spark.app.name,arrow-spark)
+[2025-04-13T19:07:08.263+0000] {spark_submit.py:491} INFO - (spark.app.submitTime,1744571228206)
+[2025-04-13T19:07:08.264+0000] {spark_submit.py:491} INFO - (spark.driver.memory,1g)
+[2025-04-13T19:07:08.264+0000] {spark_submit.py:491} INFO - (spark.executor.memory,1g)
+[2025-04-13T19:07:08.264+0000] {spark_submit.py:491} INFO - (spark.master,spark:7077)
+[2025-04-13T19:07:08.264+0000] {spark_submit.py:491} INFO - (spark.submit.deployMode,client)
+[2025-04-13T19:07:08.264+0000] {spark_submit.py:491} INFO - (spark.submit.pyFiles,)
+[2025-04-13T19:07:08.265+0000] {spark_submit.py:491} INFO - Classpath elements:
+[2025-04-13T19:07:08.265+0000] {spark_submit.py:491} INFO - 
+[2025-04-13T19:07:08.265+0000] {spark_submit.py:491} INFO - 
+[2025-04-13T19:07:08.265+0000] {spark_submit.py:491} INFO - 
+[2025-04-13T19:07:09.411+0000] {spark_submit.py:491} INFO - Traceback (most recent call last):
+[2025-04-13T19:07:09.412+0000] {spark_submit.py:491} INFO - File "/opt/airflow/dags/spark/daily_aggregation.py", line 2, in <module>
+[2025-04-13T19:07:09.413+0000] {spark_submit.py:491} INFO - from pyspark.sql.functions import col, date, hour, abs, row_number
+[2025-04-13T19:07:09.413+0000] {spark_submit.py:491} INFO - ImportError: cannot import name 'date' from 'pyspark.sql.functions' (/home/airflow/.local/lib/python3.8/site-packages/pyspark/python/lib/pyspark.zip/pyspark/sql/functions.py)
+[2025-04-13T19:07:09.496+0000] {spark_submit.py:491} INFO - 25/04/13 19:07:09 INFO ShutdownHookManager: Shutdown hook called
+[2025-04-13T19:07:09.500+0000] {spark_submit.py:491} INFO - 25/04/13 19:07:09 INFO ShutdownHookManager: Deleting directory /tmp/spark-b1ecaef5-b935-446f-9794-2c9407381aa7
+[2025-04-13T19:07:09.570+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/apache/spark/operators/spark_submit.py", line 156, in execute
+    self._hook.submit(self._application)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/apache/spark/hooks/spark_submit.py", line 422, in submit
+    raise AirflowException(
+airflow.exceptions.AirflowException: Cannot execute: spark-submit --master spark:7077 --conf spark.driver.memory=1g --conf spark.executor.memory=1g --conf spark.master=local[*] --name arrow-spark --verbose /opt/airflow/dags/spark/daily_aggregation.py. Error code is: 1.
+[2025-04-13T19:07:09.574+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=daily_search_volume_aggregation, task_id=aggregate_search_volume, execution_date=20250413T180100, start_date=20250413T190704, end_date=20250413T190709
+[2025-04-13T19:07:09.583+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 3 for task aggregate_search_volume (Cannot execute: spark-submit --master spark:7077 --conf spark.driver.memory=1g --conf spark.executor.memory=1g --conf spark.master=local[*] --name arrow-spark --verbose /opt/airflow/dags/spark/daily_aggregation.py. Error code is: 1.; 294)
+[2025-04-13T19:07:09.621+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-04-13T19:07:09.636+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
