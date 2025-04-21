@@ -195,49 +195,48 @@ async def get_search_volume(request: SearchVolumeRequest):
                     for sub in subs
                 ]
                 
-                # Merge overlapping periods
+                # Merge overlapping subscription periods
                 merged_periods = merge_time_ranges(subscription_periods)
                 
-                # Check if requested period is covered by any merged period
-                request_covered = False
-                for period_start, period_end in merged_periods:
-                    if period_start <= start_time and period_end >= end_time:
-                        request_covered = True
-                        break
+                # Get mutual periods between request and subscriptions
+                mutual_periods = get_mutual_period(start_time, end_time, merged_periods)
                 
-                if not request_covered:
+                if not mutual_periods:
                     raise HTTPException(
                         status_code=status.HTTP_403_FORBIDDEN,
                         detail=f"No valid subscription for {keyword} during requested period"
                     )
                 
-                # Get search volume data
-                if timing == 'hourly':
-                    query = """
-                    SELECT created_datetime, search_volume
-                    FROM keyword_search_volume
-                    WHERE keyword_id = %s
-                    AND created_datetime BETWEEN %s AND %s
-                    ORDER BY created_datetime
-                    """
-                else:  # daily
-                    query = """
-                    SELECT date as created_datetime, search_volume
-                    FROM daily_keyword_search_volume
-                    WHERE keyword_id = %s
-                    AND date BETWEEN DATE(%s) AND DATE(%s)
-                    ORDER BY date
-                    """
-                
-                cursor.execute(query, (subs[0]['keyword_id'], start_time, end_time))
-                data = cursor.fetchall()
+                # Get search volume data for each mutual period
+                all_data = []
+                for period_start, period_end in mutual_periods:
+                    if timing == 'hourly':
+                        query = """
+                        SELECT created_datetime, search_volume
+                        FROM keyword_search_volume
+                        WHERE keyword_id = %s
+                        AND created_datetime BETWEEN %s AND %s
+                        ORDER BY created_datetime
+                        """
+                    else:  # daily
+                        query = """
+                        SELECT date as created_datetime, search_volume
+                        FROM daily_keyword_search_volume
+                        WHERE keyword_id = %s
+                        AND date BETWEEN DATE(%s) AND DATE(%s)
+                        ORDER BY date
+                        """
+                    
+                    cursor.execute(query, (subs[0]['keyword_id'], period_start, period_end))
+                    period_data = cursor.fetchall()
+                    all_data.extend(period_data)
                 
                 # Format response data
                 result[keyword] = [
                     {
                         "datetime": row["created_datetime"].strftime('%Y-%m-%d %H:%M:%S'),
                         "search_volume": row["search_volume"]
-                    } for row in data
+                    } for row in all_data
                 ]
             
         finally:
@@ -263,3 +262,15 @@ def merge_time_ranges(periods):
             merged.append(current)
     
     return merged
+
+def get_mutual_period(request_start, request_end, subscription_periods):
+    """Get the mutual time period between request and subscriptions"""
+    mutual_periods = []
+    for sub_start, sub_end in subscription_periods:
+        # Check if periods overlap
+        if sub_start <= request_end and sub_end >= request_start:
+            # Get the overlapping period
+            mutual_start = max(sub_start, request_start)
+            mutual_end = min(sub_end, request_end)
+            mutual_periods.append((mutual_start, mutual_end))
+    return merge_time_ranges(mutual_periods)
